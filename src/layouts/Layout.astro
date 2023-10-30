@@ -18,6 +18,130 @@ export interface Props {
     <title>{Astro.props.title} | YQueue</title>
   </head>
   <body>
-    <slot />
+    <header>
+      <nav class="d-flex align-items-center px-4">
+        <div class="d-flex justify-content-between align-items-center w-100 p-3">
+          <img src="/images/logo-yqueue.webp" alt="" />
+
+          <div class="nav-links d-flex gap-3">
+            <a href="#">Our Products</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <div>
+              <a class="d-flex nav-active-link" href="#">Book demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <div class="section-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-7 p-5 footer-content">
+            <div class="d-flex flex-column flex-lg-row gap-3 align-items-center mt-lg-4 p-lg-4">
+              <div class="d-flex flex-lg-column gap-3 ms-lg-5">
+                <a href="#">I Need Help</a>
+                <a href="contact-us.html">Book Demo</a>
+                <a href="#">Download</a>
+                <a href="contact-us.html">Contact Us</a>
+              </div>
+              <div class="d-flex flex-lg-column gap-3 ms-lg-5">
+                <a href="faq's.html">FAQ's</a>
+                <a href="our-team.html">Our Team</a>
+                <a href="about-us.html">About Us</a>
+                <a href="blog.html">Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 p-5 d-flex justify-content-center footer-content-2">
+            <div class="mt-lg-5 p-lg-4 text-center">
+              <div class="d-flex gap-2 mb-3 justify-content-center">
+                <a href="terms-of-use.html">Terms Of Use</a>
+                 |
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </div>
+              <p class="mb-4 text-center">Copyright © 2023 YQueue Pakistan Pte Ltd</p>
+              <div>
+                <img src="/images/linkedin.png" alt="" />
+                <img src="/images/facebook.png" alt="" />
+                <img src="/images/instagram.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+<style is:global>
+  * {
+    outline-color: #75a7ff;
+  }
+
+  nav {
+    height: 90px;
+  }
+
+  nav img {
+    cursor: pointer;
+  }
+
+  .nav-links a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 7px;
+  }
+
+  .nav-links a:hover {
+    background-color: #e7e6ea;
+  }
+
+  .nav-active-link {
+    padding: 8px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white !important;
+    background: linear-gradient(95deg, #2557d6 0%, #8824be 101%);
+  }
+
+  .nav-active-link:hover {
+    background: linear-gradient(45deg, #4125ed 0%, #9a00cf 50%, #fe8533 85%);
+  }
+
+  .footer-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+
+  .footer-content {
+    background-color: #0d072f;
+  }
+
+  .footer-content-2 {
+    background-color: #191339;
+    color: white;
+  }
+
+  .footer-content-2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+
+  .footer-content-2 img {
+    height: 38px;
+    width: 38px;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+</style>
