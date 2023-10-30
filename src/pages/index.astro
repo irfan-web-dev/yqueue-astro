@@ -1,16 +1,727 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Hello world</h1>
-	</body>
-</html>
+<Layout title="Home">
+    <header>
+      <nav class="d-flex align-items-center px-4">
+        <div
+          class="d-flex justify-content-between align-items-center w-100 p-3"
+        >
+          <img src="/images/logo-yqueue.webp" alt="" />
+
+          <div class="nav-links d-flex gap-3">
+            <a href="#">Our Products</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <div>
+              <a class="d-flex nav-active-link" href="#">Book demo</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container mt-5">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-12 col-md-6">
+            <span>ORDERING SYSTEM</span>
+            <div>
+              <h1>Why Queue?</h1>
+              <p>
+                The one-stop complete solution for taking orders. YQueue is all
+                about convenience, efficiency and reducing costs. More Info
+              </p>
+            </div>
+            <div class="mt-5 mb-5">
+              <a class="hero-active-link" href="#">More Info</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="hero-image">
+              <img src="/images/hero.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-feature container-fluid">
+        <div class="row">
+          <div
+            class="col-12 col-md-6 col-lg-4 content d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-3">
+              <h5>Select Your Services</h5>
+              <p>Dine in, take away & delivery.</p>
+            </div>
+            <div>
+              <img src="/images/scooter.gif" alt="" />
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4 content-box d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-3">
+              <h5>Allow Modifications</h5>
+              <p>Customers can personalise their items.</p>
+            </div>
+            <div>
+              <img src="/images/knife.gif" alt="" />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 content d-flex justify-content-between align-items-center"
+          >
+            <div class="ms-3">
+              <h5>Allow Modifications</h5>
+              <p>Customers can personalise their items.</p>
+            </div>
+            <div>
+              <img src="/images/burger.gif" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-started container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-6 col-lg-5 get-started-container">
+            <h2 class="me-5 ms-5 mb-5 mt-5">Get Started With YQueue Today!</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-7 get-started-container-submit">
+            <div class="me-5 ms-5 mt-5 pt-3 pb-3 pt-md-5 pb-md-5 mt-md-5">
+              <p>
+                Increase your speed of service & improve your customer
+                experience by joining us at YQueue. We'll help you register your
+                merchant profile and perform pre-launch menu checks.
+              </p>
+              <div>
+                <div class="mt-5 mb-5">
+                  <a class="hero-active-link" href="contact-us.html"
+                    >Book Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us container-fluid">
+        <div class="row about-us-content me-5 ms-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h2 class="mb-4 mb-md-0 mb-lg-0">Learn More About Us</h2>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <p>
+              Life is short, why should your customers spend it in line? YQueue
+              is the ON THE GO app bringing convenience to the fingertips of
+              busy people in their takeaway and dine-in-experience. Designed to
+              help small food & beverage businesses thrive in a tough market,
+              YQueue gives our partners big business capabilities with our suite
+              of products backed by industry low rates as we are committed to
+              being seen as the platform that HELPs small business’ grow.
+            </p>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6">
+            <iframe
+              class="ms-lg-4 mt-md-5 mt-5 mt-lg-0"
+              src="https://youtube.com/embed/YXoMzwONNi4"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits container-fluid">
+        <div class="row benefits-title me-5 ms-5 pe-md-5 ps-md-5">
+          <div class="col-12 col-lg-6">
+            <div class="benefits-image">
+              <img src="/images/benefits.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex align-items-center">
+            <h2 class="ms-lg-5 mt-5 mt-lg-0">How Can We Help Your Business?</h2>
+          </div>
+        </div>
+        <div class="benefits-list me-5 ms-5 pe-md-5 ps-md-5">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="benefit">
+                <h4>Marketing & Promotions</h4>
+                <p>
+                  With its CRM capabilities, the platform provides countless
+                  opportunities for promotion to both existing and new
+                  customers!
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="benefit">
+                <h4>Reporting</h4>
+                <p>
+                  Independently provided by YQueue, all your sales reports are
+                  automatically generated and stores for your accounting!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="benefit">
+                <h4>Customer Management</h4>
+                <p>
+                  All orders are recorded with relevant data; it’s your own CRM!
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="benefit">
+                <h4>Order Management Platform</h4>
+                <p>The app manages all your orders!</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="benefit">
+                <h4>Payment Gateways</h4>
+                <p>
+                  Secure payment through an always growing number of payment
+                  vendors!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-icon container-fluid">
+        <div class="me-md-5 ms-md-5 pe-md-5 ps-md-5">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex icon">
+              <div>
+                <img src="/images/low-rate.png" alt="" />
+              </div>
+              <p>Incredibly low rates, including Bank Fees.</p>
+            </div>
+            <div class="col-12 col-md-6 d-flex icon">
+              <div>
+                <img src="/images/cafe.png" alt="" />
+              </div>
+              <p>Ideal for café’s, restaurants, takeaways & franchises.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex icon">
+              <div>
+                <img src="/images/web-picture.png" alt="" />
+              </div>
+              <p>Provides a web platform and exposure for small businesses.</p>
+            </div>
+            <div class="col-12 col-md-6 d-flex icon">
+              <div>
+                <img src="/images/product-order.png" alt="" />
+              </div>
+              <p>
+                Reduces order fill time, allows staff to be more productive.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex icon">
+              <div>
+                <img src="/images/fast-service.png" alt="" />
+              </div>
+              <p>Fast and efficient for customers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-app container-fluid">
+        <div class="row align-items-center me-5 ms-5 pe-md-5 ps-md-5">
+          <div class="col-12 col-md-6">
+            <div class="download-app-content text-center text-md-start">
+              <h2>Download The YQueue App!</h2>
+              <p>
+                Simply hold your smartphone’s camera over the QR code and you
+                will jump the queue.
+              </p>
+              <div>
+                <img src="/images/app-store-app.png" alt="" />
+                <img src="/images/play-store-app.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-md-0 mt-5">
+            <div class="download-app-image mx-auto me-lg-0 ms-lg-auto">
+              <img src="/images/qr-code.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sub-nav container-fluid">
+        <div class="sub-nav-links text-center">
+          <nav>
+            <a href="#">Kiosk </a>
+            <a href="#">App & Online Ordering</a>
+            <a href="#">QR Dining</a>
+          </nav>
+        </div>
+        <div class="sub-nav-content container">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div>
+                <h2 class="mb-4">Kiosk</h2>
+                <p>
+                  Smart Kiosks are standalone YQueue powered systems that
+                  display menus and independently take customers orders. They
+                  give you an extra hand at peak times and efficiently turn over
+                  plenty of orders without having the customers waiting in a
+                  queue. This system allows your staff to be more productive
+                  with their time and tend t....
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex justify-content-center mt-5 mt-md-0">
+                <img src="/images/product-kiosk.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-order container-fluid">
+        <div class="row container">
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center ps-md-0 ps-5">
+              <img src="/images/product-app.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div class="ms-md-5">
+              <h2 class="mb-4 mt-5 mt-md-0">App & Online Ordering</h2>
+              <p>
+                The YQueue App allows customers to order from their mobile
+                device from anywhere at any time. The app allows for takeaway,
+                self serve and dine in functionality for all types of outlets. A
+                great addition to our other YQueue products.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qr-dining container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="me-md-5">
+                <h2 class="mb-4">QR Dining</h2>
+                <p>
+                  QR Dining is an exciting opportunity for you to streamline the
+                  dine-in experience for your customers. Customers can place
+                  their orders when they are ready and staff become more
+                  productive by having more time to handle other orders or
+                  assist with other tasks. A new modern way of taking your
+                  customer’s orders.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mt-5 mt-md-0">
+              <div class="d-flex justify-content-center ms-md-5">
+                <img src="/images/product-qr-dining.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-7 p-5 footer-content">
+              <div
+                class="d-flex flex-column flex-lg-row gap-3 align-items-center mt-lg-4 p-lg-4"
+              >
+                <div class="d-flex flex-lg-column gap-3 ms-lg-5">
+                  <a href="#">I Need Help</a>
+                  <a href="contact-us.html">Book Demo</a>
+                  <a href="#">Download</a>
+                  <a href="contact-us.html">Contact Us</a>
+                </div>
+                <div class="d-flex flex-lg-column gap-3 ms-lg-5">
+                  <a href="faq's.html">FAQ's</a>
+                  <a href="our-team.html">Our Team</a>
+                  <a href="about-us.html">About Us</a>
+                  <a href="blog.html">Blog</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-5 p-5 d-flex justify-content-center footer-content-2"
+            >
+              <div class="mt-lg-5 p-lg-4 text-center">
+                <div class="d-flex gap-2 mb-3 justify-content-center">
+                  <a href="terms-of-use.html">Terms Of Use</a>
+                  |
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+                <p class="mb-4 text-center">
+                  Copyright © 2023 YQueue Pakistan Pte Ltd
+                </p>
+                <div>
+                  <img src="/images/linkedin.png" alt="" />
+                  <img src="/images/facebook.png" alt="" />
+                  <img src="/images/instagram.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </Layout>
+
+<style>
+  * {
+  outline-color: #75a7ff;
+}
+
+nav {
+  height: 90px;
+}
+
+nav img {
+  cursor: pointer;
+}
+
+.nav-links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.nav-links a:hover {
+  background-color: #e7e6ea;
+}
+
+.nav-active-link {
+  padding: 8px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: white !important;
+  background: linear-gradient(95deg, #2557d6 0%, #8824be 101%);
+}
+
+.nav-active-link:hover {
+  background: linear-gradient(45deg, #4125ed 0%, #9a00cf 50%, #fe8533 85%);
+}
+
+.hero .hero-image {
+  height: 650px;
+  overflow: hidden;
+}
+
+.hero span {
+  background-color: #ffe7d6;
+  font-weight: 500;
+  color: #d75e0a;
+  font-size: 12px;
+  border-radius: 100px;
+  padding: 4px 8px;
+}
+
+.hero h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 64px;
+}
+
+.hero-active-link {
+  font-size: 14px;
+  padding: 11px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(95deg, #2557d6 0%, #8824be 101%);
+}
+
+.hero-active-link:hover {
+  background: linear-gradient(45deg, #4125ed 0%, #9a00cf 50%, #fe8533 85%);
+}
+
+.hero-feature h5 {
+  font-size: 16px;
+}
+
+.hero-feature p {
+  color: #c2c0f3;
+  margin: 0;
+}
+
+.content {
+  padding: 24px;
+  color: #f0effc;
+  background-color: #534dcc;
+}
+
+.content-box {
+  padding: 24px;
+  color: #f0effc;
+  background-color: #3f39b8;
+}
+
+.hero-feature img {
+  height: 40px;
+  width: 40px;
+}
+
+.get-started {
+  background-color: #0d072f;
+}
+
+.get-started-container {
+  background-color: #0d072f;
+}
+
+.get-started h2 {
+  font-size: 35px;
+  color: white;
+}
+
+.get-started-container-submit {
+  color: white;
+  background-color: #191339;
+}
+
+.about-us {
+  background-color: #f9f9fb;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.about-us iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 287px;
+  box-shadow: #dbdae0 8px 8px;
+}
+
+@media (min-width: 992px) {
+  .about-us iframe {
+    width: 448px;
+    height: 252px;
+  }
+}
+
+.about-us-content h2 {
+  font-size: 38px;
+}
+
+.benefits {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.benefits-image img {
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: #dbdae0 8px 8px;
+}
+
+@media (min-width: 992px) {
+  .benefits-image img {
+    width: 448px;
+    height: 350px;
+  }
+}
+
+.benefits-title h2 {
+  font-size: 38px;
+}
+
+.benefits-list {
+  padding-top: 64px;
+}
+
+.benefits-list .benefit {
+  border-left: 3px solid #e7e6ea;
+  padding-left: 32px;
+  margin-bottom: 64px;
+}
+
+.benefit h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.benefits-icon {
+  background-color: #f9f9fb;
+  padding-top: 104px;
+  padding-bottom: 100px;
+}
+
+.benefits-icon .icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.benefits-icon .icon p {
+  margin: 0;
+  padding-left: 32px;
+}
+
+.download-app {
+  background: linear-gradient(95deg, #2557d6 0%, #8824be 101%);
+  padding-top: 104px;
+  padding-bottom: 100px;
+}
+
+.download-app .download-app-content {
+  color: white;
+}
+
+.download-app-content img {
+  cursor: pointer;
+}
+
+.download-app-content h2 {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.download-app-image {
+  padding: 16px;
+  border-radius: 16px;
+  border: 4px solid #7410aa;
+  background-color: white;
+  max-width: 200px;
+}
+
+.sub-nav {
+  position: relative;
+  padding-top: 60px;
+  background-color: #f9f9fb;
+}
+
+.sub-nav-links {
+  position: sticky;
+  top: 50px;
+}
+
+.sub-nav-links nav a {
+  text-decoration: none;
+  border: #595766 1px solid;
+  border-radius: 100px;
+  font-size: 15px;
+  color: #625e78;
+  background-color: #fafafa;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.sub-nav-links a:hover {
+  color: rgb(0, 0, 121);
+  border: #5e5985 2px solid;
+}
+
+.sub-nav-content h2 {
+  font-size: 38px;
+}
+
+.sub-nav-content a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #2557d6;
+  font-weight: 500;
+}
+
+.sub-nav-content a:hover {
+  color: #002fae;
+}
+
+.sub-nav-content {
+  padding-top: 64px;
+  padding-bottom: 90px;
+}
+
+.app-order {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.app-order h2 {
+  font-size: 38px;
+}
+
+.app-order a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #2557d6;
+  font-weight: 500;
+}
+
+.app-order a:hover {
+  color: #002fae;
+}
+
+.qr-dining {
+  background-color: #f9f9fb;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.qr-dining h2 {
+  font-size: 38px;
+}
+
+.qr-dining a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #2557d6;
+  font-weight: 500;
+}
+
+.qr-dining a:hover {
+  color: #002fae;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.footer-content {
+  background-color: #0d072f;
+}
+
+.footer-content-2 {
+  background-color: #191339;
+  color: white;
+}
+
+.footer-content-2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.footer-content-2 img {
+  height: 38px;
+  width: 38px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+</style>
