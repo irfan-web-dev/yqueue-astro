@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FAQ">
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation-links d-flex gap-3 ms-5 me-5">
+        <a href="#">Customer Questions</a>
+        <a href="#">Merchant Questions</a>
+      </div>
+    </div>
+    <h1 class="pt-5 ms-5 me-5">FAQ's</h1>
+    <section class="faqs ms-5 me-5">
+      <div>
+        <h2>Customer Questions</h2>
+        <div class="faq">
+          <h4>What is YQueue?</h4>
+          <p>
+            YQueue is an ordering & payment platform for you to browse, order and pay for your favourite food! Pre-order
+            ahead to skip the queue or order your dine-in for quicker service!
+          </p>
+        </div>
+        <div class="faq">
+          <h4>Is YQueue free to users?</h4>
+          <p>
+            100% free to use, always! Download the YQueue App and register an account for zero charge and maximum
+            convenience.
+          </p>
+        </div>
+        <div class="faq">
+          <h4>Why should I use YQueue?</h4>
+          <p>
+            Order and pay instantly, anytime and anywhere for your favourite food and drinks! Why queue standing in
+            lines when you can slot in your orders virtually?
+          </p>
+        </div>
+        <div class="faq">
+          <h4>Must I register for an account?</h4>
+          <p>
+            There is a one-time registration for new YQueue users on our App and QR (Web-app). This is to ensure secure
+            payment for all your purchases and convenience for subsequent usage. Everyone loves peace of mind.
+          </p>
+        </div>
+        <div class="faq">
+          <h4>Where can I use YQueue?</h4>
+          <p>
+            Download the YQueue App to view all our merchants, or look out for YQueue QR stickers at your favourite
+            shops!
+          </p>
+        </div>
+        <div class="faq">
+          <h4>How can I preorder by location?</h4>
+          <p>
+            The YQueue App will automatically list nearest F&B merchants based on your location. To select another
+            location, tap the address field on the landing page and input your desired location.
+          </p>
+        </div>
+        <div class="faq">
+          <h4>I made a mistake with my order! What can I do?</h4>
+          <p>
+            Don't panic! Kindly call the outlet you ordered from, stating your Order Number. You will be able to
+            retrieve the contact details under their listing's 'More Information'. Alternatively, you can reach YQueue
+            Support at <a href="#">+65 6904 4827</a>.
+          </p>
+        </div>
+      </div>
+      <div class="mb-5">
+        <h2>Merchant Questions</h2>
+        <div class="faq">
+          <h4>What is YQueue?</h4>
+          <p>
+            We are more than an App! YQueue is a one-stop ordering & payment solution to tackle issues of time
+            constraints, difficult recruitment and lack of customer loyalty. We allow customers to self-order & pay to
+            reduce reliance on manpower, which translates to time saved and increased operational efficiency.
+          </p>
+        </div>
+        <div class="faq">
+          <h4>Why YQueue?</h4>
+          <p>
+            We are a merchant-centric platform that is constantly improving to cater to your business needs. We want to
+            stimulate sustainable growth in the F&B industry via enhanced efficiency, less discounts and promos that
+            dilute your brand's value.
+          </p>
+        </div>
+        <div class="faq">
+          <h4>What are the ways customers can self-order and pay?</h4>
+          <p>
+            YQueue offers 3 touch points to cater to different types of consumers: App, QR and Kiosk. Customers can
+            order & pay through the YQueue App, scan QR codes to access your web-app or head directly to Kiosks deployed
+            at your outlets to order instantly.
+          </p>
+        </div>
+        <div class="faq">
+          <h4>How can my F&B business benefit from YQueue?</h4>
+          <p>
+            With time and manpower saved on cashiering duties, your staff can spend more effort to connect with
+            customers and spark real conversations. Cost-savings aside, improving the customer experience is key to
+            promoting brand loyalty!
+          </p>
+        </div>
+        <div class="faq">
+          <h4>How do I join YQueue as a merchant?</h4>
+          <p>Visit our and we will get in touch with you!</p>
+        </div>
+        <div class="faq">
+          <h4>What are the differences between the YQueue App, QR and Kiosk?</h4>
+          <p>
+            App: Customers can order & pay anytime, anywhere and track their loyalty programme. QR/Web-app: No downloads
+            required, instant Scan-Order-Pay process. Kiosks: No downloads and no account registration required.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .navigation {
+    position: sticky;
+    top: 64px;
+  }
+
+  .navigation .navigation-links a {
+    box-shadow: 3px 4px 4px #e7e6ea;
+    text-decoration: none;
+    border: #625e78 1px solid;
+    border-radius: 100px;
+    font-size: 15px;
+    color: #625e78;
+    background-color: #fafafa;
+    padding: 4px;
+    font-weight: 500;
+  }
+
+  .navigation .navigation-links a:hover {
+    color: rgb(0, 0, 194);
+    border: 2px solid #4f3db9;
+  }
+
+  main {
+    position: relative;
+    padding-top: 64px;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-top: 50px;
+  }
+
+  .faqs h2 {
+    font-size: 37px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  .faqs .faq {
+    background-color: #f3f3f5;
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 35px;
+  }
+
+  .faqs .faq h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .faqs .faq a {
+    text-decoration: none;
+    color: #2557d6;
+    font-weight: 500;
+  }
+
+  .faqs .faq a:hover {
+    color: #002fae;
+  }
+</style>
