@@ -1,0 +1,24 @@
+{
+  "name": "yqueue-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "private": false,
+  "author": {
+    "name": "Irfan Dev",
+    "email": "irfan.dev03@gmail.com",
+    "url": "https://github.com/irfan-web-dev"
+  },
+  "repository": {
+    "url": "https://github.com/irfan-web-dev/yqueue-astro.git"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^3.4.0"
+  }
+}
