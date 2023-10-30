@@ -1,6 +1,7 @@
 {
   "name": "yqueue-astro",
   "type": "module",
+  "license": "ISC",
   "version": "0.0.1",
   "private": false,
   "author": {
@@ -20,5 +21,9 @@
   },
   "dependencies": {
     "astro": "^3.4.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.1"
   }
 }
